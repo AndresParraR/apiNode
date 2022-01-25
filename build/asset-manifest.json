@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/Briefcase/static/css/main.3c60cf4c.chunk.css",
+    "main.js": "/Briefcase/static/js/main.864f82ee.chunk.js",
+    "main.js.map": "/Briefcase/static/js/main.864f82ee.chunk.js.map",
+    "runtime-main.js": "/Briefcase/static/js/runtime-main.44449ed2.js",
+    "runtime-main.js.map": "/Briefcase/static/js/runtime-main.44449ed2.js.map",
+    "static/js/2.7c088437.chunk.js": "/Briefcase/static/js/2.7c088437.chunk.js",
+    "static/js/2.7c088437.chunk.js.map": "/Briefcase/static/js/2.7c088437.chunk.js.map",
+    "static/js/3.bea0af99.chunk.js": "/Briefcase/static/js/3.bea0af99.chunk.js",
+    "static/js/3.bea0af99.chunk.js.map": "/Briefcase/static/js/3.bea0af99.chunk.js.map",
+    "index.html": "/Briefcase/index.html",
+    "static/css/main.3c60cf4c.chunk.css.map": "/Briefcase/static/css/main.3c60cf4c.chunk.css.map",
+    "static/js/2.7c088437.chunk.js.LICENSE.txt": "/Briefcase/static/js/2.7c088437.chunk.js.LICENSE.txt",
+    "static/media/PlayStore.2541b83b.png": "/Briefcase/static/media/PlayStore.2541b83b.png",
+    "static/media/Swagger-logo.afd1bfb8.png": "/Briefcase/static/media/Swagger-logo.afd1bfb8.png",
+    "static/media/appStore.8fc48c53.png": "/Briefcase/static/media/appStore.8fc48c53.png",
+    "static/media/computerDashboard.a7ad3c5c.png": "/Briefcase/static/media/computerDashboard.a7ad3c5c.png",
+    "static/media/mobile1.05189ff2.png": "/Briefcase/static/media/mobile1.05189ff2.png",
+    "static/media/mobile2.d241d13c.png": "/Briefcase/static/media/mobile2.d241d13c.png",
+    "static/media/mobile3.59d01ac6.png": "/Briefcase/static/media/mobile3.59d01ac6.png",
+    "static/media/mobile4.40eb7878.png": "/Briefcase/static/media/mobile4.40eb7878.png",
+    "static/media/mobile5.a6a3b5a5.png": "/Briefcase/static/media/mobile5.a6a3b5a5.png",
+    "static/media/monitoringAngular.5321c912.png": "/Briefcase/static/media/monitoringAngular.5321c912.png",
+    "static/media/monitoringReact.7c6d2a59.png": "/Briefcase/static/media/monitoringReact.7c6d2a59.png",
+    "static/media/monitoringVue.39439556.png": "/Briefcase/static/media/monitoringVue.39439556.png",
+    "static/media/personDark.d1159ddb.jpg": "/Briefcase/static/media/personDark.d1159ddb.jpg",
+    "static/media/tree.51dc815c.jpg": "/Briefcase/static/media/tree.51dc815c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.44449ed2.js",
+    "static/js/2.7c088437.chunk.js",
+    "static/css/main.3c60cf4c.chunk.css",
+    "static/js/main.864f82ee.chunk.js"
+  ]
+}
