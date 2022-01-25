@@ -20,8 +20,8 @@ app.use(bodyParser.json({ limit: '50mb' }));
 var server = require('http').Server(app);
 const io = require('socket.io')(server, {
   cors: {
-    origin: "http://localhost:8081",
-    credentials: true
+    origin: "*",
+    credentials: false
   },
   allowEIO3: true
 });
