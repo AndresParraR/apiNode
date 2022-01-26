@@ -24,13 +24,22 @@ const io = require('socket.io')(server, {
   allowEIO3: true
 });
 
+var coordinates={
+  lat: parseFloat(getRandomValue(47.313000, 47.314000)),
+  lng: parseFloat(getRandomValue(-1.319000, -1.319900)),
+}
+
+let someNewValues = new Array(7).fill(0).reduce((acc, el) => {
+  return [...acc, Math.floor(getRandomValue(0, 101))]
+}, [])
+
 io.on('connection', async function (socket) {
   setInterval(function () {
-    var coordinates={
+    coordinates={
       lat: parseFloat(getRandomValue(47.313000, 47.314000)),
       lng: parseFloat(getRandomValue(-1.319000, -1.319900)),
     }
-    let someNewValues = new Array(7).fill(0).reduce((acc, el) => {
+    someNewValues = new Array(7).fill(0).reduce((acc, el) => {
       return [...acc, Math.floor(getRandomValue(0, 101))]
     }, [])
     socket.emit('NEW_COORDINATES', coordinates);
