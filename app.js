@@ -26,10 +26,6 @@ const io = require('socket.io')(server, {
   allowEIO3: true
 });
 
-server.listen(process.env.PORT || 8080, function () {
-  console.log("Servidor corriendo en http://localhost:"+process.env.PORT);
-});
-
 io.on('connection', async function (socket) {
   setInterval(function () {
     var coordinates={
@@ -102,8 +98,12 @@ app.use(function (err, req, res, next) {
   return res.status(500).json({ error: err });
 });
 
-http.listen(5000, () => {
-  console.log("listening on *:5000");
+http.listen(process.env.PORT || 8080, () => {
+  console.log("listening on *:"+ process.env.PORT);
 })
+
+server.listen(process.env.PORT || 3000, function () {
+  console.log("Servidor corriendo en http://localhost:"+process.env.PORT);
+});
 
 module.exports = app;
