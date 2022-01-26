@@ -6,18 +6,16 @@ const bodyParser = require('body-parser')
 const swaggerUI = require('swagger-ui-express')
 const swaggerJsDoc = require('swagger-jsdoc')
 const app = express();
-const http = require('http').Server(app);
+// const http = require('http').Server(app);
 const router = express.Router();
-
+const server = app.listen(process.env.PORT || 3000)
 // const httpServer = require("http").createServer();
-
 const controllers = requireDir('./controllers');
 
 app.use(morgan('dev'))
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.use(bodyParser.json({ limit: '50mb' }));
 
-var server = require('http').Server(app);
 const io = require('socket.io')(server, {
   cors: {
     origin: "*",
@@ -98,12 +96,8 @@ app.use(function (err, req, res, next) {
   return res.status(500).json({ error: err });
 });
 
-http.listen(process.env.PORT || 8080, () => {
-  console.log("listening on *:"+ process.env.PORT);
-})
-
-server.listen(process.env.PORT || 3000, function () {
-  console.log("Servidor corriendo en http://localhost:"+process.env.PORT);
-});
+// server.listen(process.env.PORT || 3000, function () {
+//   console.log("Servidor corriendo en http://localhost:"+process.env.PORT);
+// });
 
 module.exports = app;
