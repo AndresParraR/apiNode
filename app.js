@@ -18,7 +18,7 @@ app.use(bodyParser.json({ limit: '50mb' }));
 
 const io = require('socket.io')(server, {
   cors: {
-    origin: "https://andresparrar.github.io",
+    origin: "*",
     credentials: false
   },
   allowEIO3: true
