@@ -7,17 +7,17 @@
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
+    "username": "postgres",
+    "password": "Colombia9.",
+    "database": "briefcase",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "postgres"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "uvrlhbyc9uy249jv",
+    "password": "YaeqYPfj8BKYqXzHJmdL",
+    "database": "bptbh64wbe0m56lck7h5",
+    "host": "bptbh64wbe0m56lck7h5-mysql.services.clever-cloud.com",
     "dialect": "mysql"
   }
 }

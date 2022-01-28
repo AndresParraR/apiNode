@@ -19,9 +19,3 @@ module.exports = {
     // }
   },
 };
-
-// "username": "postgres",
-// "password": "Colombia9.",
-// "database": "briefcase",
-// "host": "127.0.0.1",
-// "dialect": "postgres",
