@@ -29,7 +29,7 @@ var coordinates={
   lng: parseFloat(getRandomValue(-1.319000, -1.319900)),
 }
 
-let someNewValues = new Array(7).fill(0).reduce((acc, el) => {
+var someNewValues = new Array(7).fill(0).reduce((acc, el) => {
   return [...acc, Math.floor(getRandomValue(0, 101))]
 }, [])
 
