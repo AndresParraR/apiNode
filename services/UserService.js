@@ -14,7 +14,7 @@ module.exports = class UserService {
     static async delete(id) {
       var user = await this.get(id);
       console.log(user)
-      if (user == newUserll) {
+      if (user == null) {
         throw Error('user does not exist');
       }
       var rowsAffected = await models.user.destroy({where: {id}});
@@ -39,7 +39,7 @@ module.exports = class UserService {
     static async update(item) {
       var user = await this.get(item.id);
 
-      if (user == newUserll) {
+      if (user == null) {
         throw Error('user does not exist');
       }
 
@@ -60,7 +60,7 @@ module.exports = class UserService {
         return await this.get(item.id);
       }
 
-      return newUserll;
+      return null;
     }
 
     static async getAll(page, pageSize, search) {
